@@ -1,0 +1,28 @@
+p {
+    color: pink
+}
+
+p + H3 {
+
+}
+
+P::first-letter {
+    color: aquamarine(243, 18, 18);
+}
+
+.botao_form{
+    background-color: bisque;
+    width: 200px;
+    height: 200px;
+}
+.botao_form:hover{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+
+.botao_nav{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
