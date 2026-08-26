@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #ddd;
+}
+
+header {
+    height: 100px;
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    width: 80%;
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px auto;
+    border: 5px solid #777;
+    text-align: center;
+}
+
+main div {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border: 4px solid #555;
+    vertical-align: top;
+}
+
+.carta1 {
+    width: 180px;
+    background-color: #f5d6d6;
+    font-family: Arial;
+}
+
+.carta2 {
+    width: 220px;
+    background-color: #d6e5f5;
+    font-family: Georgia;
+}
+
+.carta3 {
+    width: 160px;
+    background-color: #ddd;
+    font-family: Verdana;
+}
+
+.carta4 {
+    width: 200px;
+    background-color: #f5caca;
+    font-family: "Times New Roman";
+}
+
+.carta5 {
+    width: 190px;
+    background-color: #f5e5b5;
+    font-family: "Courier New";
+}
+
+.carta6 {
+    width: 210px;
+    background-color: #d5ead5;
+    font-family: Tahoma;
+}
+
+.carta7 {
+    width: 170px;
+    background-color: #e0d5ed;
+    font-family: Georgia;
+}
+
+.carta8 {
+    width: 230px;
+    background-color: #d5e8e8;
+    font-family: Calibri;
+}
+
+.carta9 {
+    width: 185px;
+    background-color: #ead9c5;
+    font-family: Arial;
+}
+
+.carta10 {
+    width: 215px;
+    background-color: #d9d9ed;
+    font-family: Verdana;
+}
+
+footer {
+    height: 70px;
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
