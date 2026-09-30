@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>SHOWPASS | Eventos e Shows</title>
+
+    <link rel="stylesheet" href="variaveis.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>✦</span> SHOWPASS
+        </div>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#shows">Shows</a>
+            <a href="#artistas">Artistas</a>
+            <a href="#sobre">Sobre</a>
+        </nav>
+
+        <button class="login">
+            Entrar
+        </button>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-conteudo">
+
+            <span class="tag">
+                🔥 OS MELHORES EVENTOS ESTÃO AQUI
+            </span>
+
+            <h1>
+                VIVA A MÚSICA.
+                <br>
+
+                <span>VIVA O MOMENTO.</span>
+            </h1>
+
+            <p>
+                Encontre shows, festivais e experiências
+                inesquecíveis perto de você.
+            </p>
+
+            <div class="busca">
+
+                <span>🔎</span>
+
+                <input
+                    type="text"
+                    id="pesquisa"
+                    placeholder="Procure por artista ou evento"
+                >
+
+                <button id="btnPesquisar">
+                    Buscar
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-luzes luz1"></div>
+        <div class="hero-luzes luz2"></div>
+        <div class="hero-luzes luz3"></div>
+
+    </section>
+
+
+    <!-- =========================
+         CATEGORIAS
+    ========================== -->
+
+    <section class="categorias">
+
+        <button class="categoria ativa">
+            🎤 Shows
+        </button>
+
+        <button class="categoria">
+            🎸 Rock
+        </button>
+
+        <button class="categoria">
+            🎧 Eletrônica
+        </button>
+
+        <button class="categoria">
+            🎵 Pop
+        </button>
+
+        <button class="categoria">
+            🤘 Festivais
+        </button>
+
+        <button class="categoria">
+            🎭 Teatro
+        </button>
+
+    </section>
+
+
+    <!-- =========================
+         PRÓXIMOS SHOWS
+    ========================== -->
+
+    <section class="secao" id="shows">
+
+        <div class="titulo-secao">
+
+            <div>
+                <span>AGENDA</span>
+
+                <h2>
+                    Próximos shows
+                </h2>
+            </div>
+
+            <a href="#">
+                Ver todos →
+            </a>
+
+        </div>
+
+
+        <div class="cards">
+
+
+            <!-- SHOW 1 -->
+
+            <article class="show-card">
+
+                <div class="imagem show1">
+
+                    <span class="badge">
+                        DESTAQUE
+                    </span>
+
+                    <div class="data">
+                        <strong>18</strong>
+                        <small>OUT</small>
+                    </div>
+
+                </div>
+
+                <div class="show-info">
+
+                    <span class="genero">
+                        POP
+                    </span>
+
+                    <h3>
+                        The Neon Lights
+                    </h3>
+
+                    <p>
+                        📍 São Paulo, SP
+                    </p>
+
+                    <p>
+                        🕘 20:00
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <strong>
+                            A partir de R$ 89
+                        </strong>
+
+                        <button>
+                            Ingressos
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SHOW 2 -->
+
+            <article class="show-card">
+
+                <div class="imagem show2">
+
+                    <span class="badge roxo">
+                        IMPERDÍVEL
+                    </span>
+
+                    <div class="data">
+                        <strong>25</strong>
+                        <small>OUT</small>
+                    </div>
+
+                </div>
+
+                <div class="show-info">
+
+                    <span class="genero">
+                        ROCK
+                    </span>
+
+                    <h3>
+                        Electric Horizon
+                    </h3>
+
+                    <p>
+                        📍 Rio de Janeiro, RJ
+                    </p>
+
+                    <p>
+                        🕘 21:30
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <strong>
+                            A partir de R$ 120
+                        </strong>
+
+                        <button>
+                            Ingressos
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SHOW 3 -->
+
+            <article class="show-card">
+
+                <div class="imagem show3">
+
+                    <span class="badge verde">
+                        NOVO
+                    </span>
+
+                    <div class="data">
+                        <strong>02</strong>
+                        <small>NOV</small>
+                    </div>
+
+                </div>
+
+                <div class="show-info">
+
+                    <span class="genero">
+                        ELETRÔNICA
+                    </span>
+
+                    <h3>
+                        Future Beats
+                    </h3>
+
+                    <p>
+                        📍 Belo Horizonte, MG
+                    </p>
+
+                    <p>
+                        🕘 22:00
+                    </p>
+
+                    <div class="card-bottom">
+
+                        <strong>
+                            A partir de R$ 75
+                        </strong>
+
+                        <button>
+                            Ingressos
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DESTAQUE
+    ========================== -->
+
+    <section class="banner">
+
+        <div>
+
+            <span>
+                EXPERIÊNCIA AO VIVO
+            </span>
+
+            <h2>
+                Seu próximo
+                <strong>grande momento</strong>
+                começa aqui.
+            </h2>
+
+            <p>
+                Descubra novos artistas, grandes shows
+                e experiências que você não vai esquecer.
+            </p>
+
+            <button>
+                Explorar eventos
+            </button>
+
+        </div>
+
+        <div class="disco">
+            ♪
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ARTISTAS
+    ========================== -->
+
+    <section class="secao" id="artistas">
+
+        <div class="titulo-secao">
+
+            <div>
+
+                <span>NO PALCO</span>
+
+                <h2>
+                    Artistas em destaque
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="artistas">
+
+            <div class="artista">
+                <div class="avatar avatar1">
+                    🎤
+                </div>
+
+                <strong>
+                    Aurora
+                </strong>
+
+                <small>
+                    Pop
+                </small>
+            </div>
+
+
+            <div class="artista">
+                <div class="avatar avatar2">
+                    🎸
+                </div>
+
+                <strong>
+                    The Waves
+                </strong>
+
+                <small>
+                    Rock
+                </small>
+            </div>
+
+
+            <div class="artista">
+                <div class="avatar avatar3">
+                    🎧
+                </div>
+
+                <strong>
+                    DJ Nova
+                </strong>
+
+                <small>
+                    Eletrônica
+                </small>
+            </div>
+
+
+            <div class="artista">
+                <div class="avatar avatar4">
+                    🎹
+                </div>
+
+                <strong>
+                    Luna
+                </strong>
+
+                <small>
+                    Indie
+                </small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FORMULÁRIO
+    ========================== -->
+
+    <section class="inscricao" id="sobre">
+
+        <div>
+
+            <span>
+                🎟️ MONTE SEU EVENTO
+            </span>
+
+            <h2>
+                Planeje seu próximo show
+            </h2>
+
+            <p>
+                Digite o nome do evento e a quantidade
+                de ingressos para simular sua compra.
+            </p>
+
+        </div>
+
+
+        <div class="form-show">
+
+            <label for="evento">
+                Nome do evento
+            </label>
+
+            <input
+                type="text"
+                id="evento"
+                placeholder="Ex: Festival de Verão"
+            >
+
+
+            <label for="ingressos">
+                Quantidade de ingressos
+            </label>
+
+            <input
+                type="number"
+                id="ingressos"
+                placeholder="Ex: 2"
+            >
+
+
+            <button id="btnComprar">
+                Calcular pedido →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="logo">
+            <span>✦</span> SHOWPASS
+        </div>
+
+        <p>
+            Música, eventos e experiências.
+        </p>
+
+        <small>
+            © 2026 ShowPass
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

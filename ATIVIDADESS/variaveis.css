@@ -1,0 +1,1039 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #070b18;
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 75px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: rgba(7, 11, 24, 0.9);
+
+    border-bottom: 1px solid #20263d;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    backdrop-filter: blur(15px);
+}
+
+
+.logo {
+    font-size: 21px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #00d9ff;
+
+    font-size: 27px;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 35px;
+}
+
+nav a {
+    color: #aeb8d0;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+
+.login {
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid #3a4564;
+
+    border-radius: 20px;
+
+    padding: 9px 20px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 580px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 70px 10%;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            #372477 0%,
+            transparent 35%
+        ),
+        linear-gradient(
+            120deg,
+            #080c1c,
+            #111a3b,
+            #071322
+        );
+}
+
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    border-radius: 50%;
+
+    right: -200px;
+    top: -200px;
+
+    background: #6b2cff;
+
+    filter: blur(140px);
+
+    opacity: 0.25;
+}
+
+
+.hero-conteudo {
+    position: relative;
+
+    z-index: 3;
+
+    max-width: 750px;
+}
+
+
+.tag {
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border-radius: 20px;
+
+    background: rgba(0, 217, 255, 0.1);
+
+    border: 1px solid rgba(0, 217, 255, 0.3);
+
+    color: #00d9ff;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 85px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 span {
+    color: #00d9ff;
+
+    text-shadow:
+        0 0 30px rgba(0, 217, 255, 0.4);
+}
+
+
+.hero p {
+    color: #aab5ce;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    max-width: 570px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUSCA
+========================= */
+
+.busca {
+    display: flex;
+
+    align-items: center;
+
+    width: 620px;
+
+    max-width: 100%;
+
+    height: 58px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding-left: 18px;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+.busca span {
+    font-size: 18px;
+}
+
+
+.busca input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    padding: 0 15px;
+
+    font-size: 14px;
+}
+
+
+.busca button {
+    height: 100%;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 0 10px 10px 0;
+
+    background: #00bce0;
+
+    color: #00131d;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   LUZES
+========================= */
+
+.hero-luzes {
+    position: absolute;
+
+    width: 4px;
+
+    height: 500px;
+
+    bottom: -250px;
+
+    filter: blur(8px);
+
+    transform: rotate(25deg);
+
+    opacity: 0.5;
+}
+
+.luz1 {
+    right: 15%;
+
+    background: #00d9ff;
+}
+
+.luz2 {
+    right: 25%;
+
+    background: #9d4edd;
+
+    transform: rotate(-20deg);
+}
+
+.luz3 {
+    right: 5%;
+
+    background: #ff3cac;
+
+    transform: rotate(15deg);
+}
+
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+.categorias {
+    display: flex;
+
+    gap: 10px;
+
+    padding: 25px 7%;
+
+    background: #0b1021;
+
+    overflow-x: auto;
+}
+
+
+.categoria {
+    padding: 11px 18px;
+
+    border-radius: 25px;
+
+    border: 1px solid #29324e;
+
+    background: #11172b;
+
+    color: #aeb8d0;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+}
+
+
+.categoria.ativa,
+.categoria:hover {
+    background: #00d9ff;
+
+    color: #00131d;
+
+    border-color: #00d9ff;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.secao {
+    padding: 70px 7%;
+}
+
+
+.titulo-secao {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 30px;
+}
+
+
+.titulo-secao span {
+    color: #00d9ff;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.titulo-secao h2 {
+    font-size: 32px;
+
+    margin-top: 7px;
+}
+
+
+.titulo-secao a {
+    color: #00d9ff;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+.show-card {
+    background: #10172a;
+
+    border: 1px solid #222b45;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+
+.show-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #00cce9;
+
+    box-shadow:
+        0 15px 40px rgba(0, 217, 255, 0.1);
+}
+
+
+.imagem {
+    height: 230px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.show1 {
+    background:
+        linear-gradient(
+            135deg,
+            #ff512f,
+            #dd2476,
+            #401f7a
+        );
+}
+
+
+.show2 {
+    background:
+        linear-gradient(
+            135deg,
+            #111,
+            #5b21b6,
+            #0ea5e9
+        );
+}
+
+
+.show3 {
+    background:
+        linear-gradient(
+            135deg,
+            #00b09b,
+            #096b82,
+            #111c42
+        );
+}
+
+
+.imagem::after {
+    content: "♪";
+
+    position: absolute;
+
+    font-size: 150px;
+
+    color: rgba(255, 255, 255, 0.12);
+
+    right: 20px;
+
+    bottom: -40px;
+}
+
+
+.badge {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    padding: 6px 10px;
+
+    background: #ff3864;
+
+    border-radius: 5px;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    z-index: 2;
+}
+
+
+.badge.roxo {
+    background: #8b5cf6;
+}
+
+
+.badge.verde {
+    background: #00c896;
+}
+
+
+.data {
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    width: 55px;
+    height: 60px;
+
+    background: white;
+
+    color: #111;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 2;
+}
+
+
+.data strong {
+    font-size: 22px;
+}
+
+
+.data small {
+    font-size: 10px;
+
+    color: #e83d61;
+}
+
+
+/* =========================
+   INFO CARD
+========================= */
+
+.show-info {
+    padding: 22px;
+}
+
+
+.genero {
+    color: #00d9ff;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+.show-info h3 {
+    font-size: 21px;
+
+    margin: 8px 0 15px;
+}
+
+
+.show-info p {
+    color: #8995b0;
+
+    font-size: 13px;
+
+    margin-bottom: 7px;
+}
+
+
+.card-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-top: 1px solid #252e47;
+
+    padding-top: 18px;
+
+    margin-top: 18px;
+}
+
+
+.card-bottom strong {
+    font-size: 13px;
+}
+
+
+.card-bottom button {
+    border: 0;
+
+    background: #00d9ff;
+
+    color: #00131d;
+
+    padding: 9px 13px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    margin: 30px 7% 70px;
+
+    padding: 60px;
+
+    border-radius: 25px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            110deg,
+            #14204b,
+            #55238f
+        );
+}
+
+
+.banner::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    background: #00d9ff;
+
+    border-radius: 50%;
+
+    right: -200px;
+    top: -200px;
+
+    filter: blur(100px);
+
+    opacity: 0.3;
+}
+
+
+.banner > div:first-child {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 600px;
+}
+
+
+.banner span {
+    color: #00d9ff;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+}
+
+
+.banner h2 {
+    font-size: 42px;
+
+    line-height: 1.1;
+
+    margin: 15px 0;
+}
+
+
+.banner h2 strong {
+    color: #00d9ff;
+}
+
+
+.banner p {
+    color: #c0c9dc;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+.banner button {
+    padding: 13px 20px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #18132e;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.disco {
+    position: absolute;
+
+    right: 10%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 230px;
+
+    height: 230px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 90px;
+
+    color: white;
+
+    background:
+        repeating-radial-gradient(
+            circle,
+            #111 0,
+            #111 8px,
+            #272727 10px,
+            #111 13px
+        );
+
+    box-shadow:
+        0 0 50px rgba(0, 217, 255, 0.2);
+}
+
+
+/* =========================
+   ARTISTAS
+========================= */
+
+.artistas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.artista {
+    text-align: center;
+}
+
+
+.avatar {
+    width: 150px;
+    height: 150px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+
+    border: 3px solid #202b48;
+}
+
+
+.avatar1 {
+    background: linear-gradient(135deg, #f857a6, #ff5858);
+}
+
+.avatar2 {
+    background: linear-gradient(135deg, #434343, #000);
+}
+
+.avatar3 {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.avatar4 {
+    background: linear-gradient(135deg, #8360c3, #2ebf91);
+}
+
+
+.artista strong {
+    display: block;
+
+    margin-bottom: 5px;
+}
+
+
+.artista small {
+    color: #77849f;
+}
+
+
+/* =========================
+   INSCRIÇÃO
+========================= */
+
+.inscricao {
+    margin: 50px 7%;
+
+    padding: 45px;
+
+    background: #0f172c;
+
+    border: 1px solid #27314c;
+
+    border-radius: 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+}
+
+
+.inscricao > div:first-child > span {
+    color: #00d9ff;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.inscricao h2 {
+    font-size: 35px;
+
+    margin: 15px 0;
+}
+
+
+.inscricao p {
+    color: #8995ad;
+
+    line-height: 1.6;
+}
+
+
+.form-show {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-show label {
+    color: #aeb9d0;
+
+    font-size: 12px;
+
+    margin-bottom: 7px;
+}
+
+
+.form-show input {
+    height: 48px;
+
+    border-radius: 8px;
+
+    border: 1px solid #303b5b;
+
+    background: #080d1c;
+
+    color: white;
+
+    padding: 0 15px;
+
+    margin-bottom: 15px;
+
+    outline: none;
+}
+
+
+.form-show input:focus {
+    border-color: #00d9ff;
+}
+
+
+.form-show button {
+    height: 48px;
+
+    border: 0;
+
+    border-radius: 8px;
+
+    background: #00d9ff;
+
+    color: #00131d;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 50px 7%;
+
+    border-top: 1px solid #202941;
+
+    background: #050811;
+
+    text-align: center;
+}
+
+
+footer p {
+    color: #6f7c98;
+
+    margin: 12px 0;
+}
+
+
+footer small {
+    color: #46516a;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 7%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .artistas {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .inscricao {
+        grid-template-columns: 1fr;
+    }
+
+    .disco {
+        opacity: 0.2;
+    }
+
+    .banner {
+        padding: 35px;
+    }
+
+    .banner h2 {
+        font-size: 30px;
+    }
+}
