@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Skin - Skincare</title>
+    <link rel="stylesheet" href="REPETIÇÕES.CSS">
+</head>
+<body>
+
+    <header>
+        <h1>Glow Skin ✨</h1>
+        <p>Cuide da sua pele, realce sua beleza!</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#rotina">Minha rotina</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="banner">
+            <h2>Sua pele merece esse cuidado!</h2>
+            <p>Descubra uma rotina simples para cuidar da sua pele todos os dias.</p>
+            <a class="botao" href="#produtos">Conheça os produtos</a>
+        </section>
+
+        <section id="produtos">
+            <h2>Nossos produtos</h2>
+
+            <div class="produtos" id="listaProdutos">
+                <!-- Os produtos serão criados pelo JavaScript -->
+            </div>
+        </section>
+
+        <section id="rotina">
+            <h2>Descubra sua rotina de skincare</h2>
+            <p>Escolha o seu tipo de pele:</p>
+
+            <select id="tipoPele">
+                <option value="oleosa">Pele oleosa</option>
+                <option value="seca">Pele seca</option>
+                <option value="mista">Pele mista</option>
+                <option value="sensivel">Pele sensível</option>
+            </select>
+
+            <button onclick="mostrarRotina()">
+                Descobrir rotina
+            </button>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Glow Skin | Seu momento de autocuidado 💕</p>
+    </footer>
+
+    <script src="REPETIÇÕES.JS"></script>
+</body>
+</html>
