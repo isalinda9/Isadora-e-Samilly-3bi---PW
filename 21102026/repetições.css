@@ -1,4 +1,5 @@
 
+/* CONFIGURAÇÕES GERAIS */
 * {
     margin: 0;
     padding: 0;
@@ -7,150 +8,299 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fff8f6;
-    color: #593d3d;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff9fc;
+    color: #573b50;
     line-height: 1.6;
 }
 
 header {
-    background-color: #e9bfc2;
-    text-align: center;
-    padding: 25px 15px;
+    background-color: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 12px #e9cddd;
 }
 
 header h1 {
-    font-size: 36px;
-    color: #743f4b;
+    color: #c15b91;
+    font-size: 28px;
 }
 
 nav {
-    margin-top: 15px;
+    display: flex;
+    gap: 24px;
 }
 
 nav a {
-    color: #593d3d;
+    color: #68465e;
     text-decoration: none;
-    margin: 0 12px;
     font-weight: bold;
 }
 
 nav a:hover {
+    color: #d45d9c;
+}
+
+/* INÍCIO */
+.hero {
+    min-height: 440px;
+    padding: 70px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background: linear-gradient(135deg, #fff0f7, #f3e9ff);
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.subtitulo {
+    color: #c15b91;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 43px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #784d70;
+}
+
+.hero-text > p:not(.subtitulo) {
+    margin-bottom: 28px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 13px 24px;
+    background-color: #d66da3;
     color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.banner {
+.botao:hover {
+    background-color: #ae4f83;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    min-width: 220px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #f6cce2, #e4d3ff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 70px 20px;
-    background-color: #f8e4df;
+    padding: 25px;
+    color: #784d70;
 }
 
-.banner h2 {
+.flor {
+    font-size: 110px;
+    color: #c15b91;
+}
+
+/* PRODUTOS */
+.produtos,
+.programacao,
+.equipe {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.produtos h2,
+.programacao h2,
+.equipe h2 {
     font-size: 30px;
+    color: #784d70;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #eedce7;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 9px 24px #e4c4d8;
+}
+
+.produto-icon {
+    font-size: 50px;
     margin-bottom: 15px;
 }
 
-.banner p {
-    margin-bottom: 25px;
-}
-
-.botao,
-button {
-    display: inline-block;
-    background-color: #b96e7b;
-    color: white;
-    padding: 12px 22px;
-    border: none;
-    border-radius: 20px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-button:hover,
-.botao:hover {
-    background-color: #914d5b;
-}
-
-section {
-    padding: 45px 20px;
-    text-align: center;
-}
-
-section h2 {
-    color: #914d5b;
-    margin-bottom: 20px;
-}
-
-.produtos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 25px;
-}
-
-.produto {
-    background-color: white;
-    border: 1px solid #f0d5d5;
-    border-radius: 15px;
-    padding: 25px;
-    width: 220px;
-    box-shadow: 0 4px 10px #00000010;
-}
-
-.produto .emoji {
-    font-size: 45px;
-}
-
-.produto h3 {
-    margin: 10px 0;
-    color: #914d5b;
-}
-
-.produto p {
+.card h3 {
+    color: #9e5682;
     margin-bottom: 10px;
 }
 
-#tipoPele {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #d9a7ae;
-    border-radius: 8px;
-    background-color: white;
+.card p {
+    margin-bottom: 15px;
+    font-size: 14px;
 }
 
-#resultado {
-    margin: 20px auto 0;
-    max-width: 500px;
+.card span {
+    color: #c15b91;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ÁREA DE PROGRAMAÇÃO */
+.programacao {
+    background-color: #f9eff8;
+}
+
+.descricao {
+    margin: -15px auto 30px;
+    max-width: 600px;
+}
+
+.resultado {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 750px;
+    border-radius: 16px;
+    text-align: left;
+    box-shadow: 0 4px 15px #ead8e6;
+}
+
+.resultado h3 {
+    color: #a64f85;
+    margin-bottom: 10px;
+}
+
+.resultado p {
+    margin-bottom: 12px;
+}
+
+.saida {
+    margin-top: 18px;
     padding: 15px;
     border-radius: 10px;
-    background-color: #f8e4df;
+    background-color: #fff1f7;
+    color: #68465e;
+    white-space: pre-line;
 }
 
+select,
+button {
+    padding: 11px 15px;
+    margin-top: 8px;
+    border-radius: 9px;
+    border: 1px solid #e4b6d0;
+    font-size: 14px;
+}
+
+select {
+    background: white;
+    color: #573b50;
+}
+
+button {
+    background-color: #cf669b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #a94c7e;
+}
+
+.saida ul {
+    padding-left: 22px;
+}
+
+/* DUPLA */
+.equipe {
+    background-color: #fff9fc;
+}
+
+.equipe p {
+    margin: 7px 0;
+}
+
+/* RODAPÉ */
 footer {
     text-align: center;
-    background-color: #e9bfc2;
-    padding: 20px;
-    margin-top: 20px;
+    background-color: #754e6e;
+    color: white;
+    padding: 25px;
+    font-size: 13px;
 }
 
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 28px;
+/* ADAPTAÇÃO PARA CELULARES */
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
     }
 
-    nav a {
-        display: inline-block;
-        margin: 5px;
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
     }
 
-    .banner h2 {
-        font-size: 24px;
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 7%;
     }
 
-    .produto {
-        width: 100%;
-        max-width: 300px;
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        min-width: 0;
+        width: 230px;
+        height: 230px;
+    }
+
+    .flor {
+        font-size: 80px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .produtos,
+    .programacao,
+    .equipe {
+        padding: 45px 6%;
+    }
+
+    .resultado {
+        padding: 18px;
     }
 }

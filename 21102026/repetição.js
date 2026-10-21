@@ -1,94 +1,110 @@
 
-const produtos = [
-    {
-        nome: "Gel de limpeza",
-        descricao: "Ajuda a limpar as impurezas da pele.",
-        preco: "R$ 39,90",
-        emoji: "🧴"
-    },
-    {
-        nome: "Hidratante facial",
-        descricao: "Ajuda a manter a pele hidratada.",
-        preco: "R$ 49,90",
-        emoji: "🌸"
-    },
-    {
-        nome: "Protetor solar",
-        descricao: "Ajuda a proteger a pele dos raios UV.",
-        preco: "R$ 59,90",
-        emoji: "☀️"
-    }
+// ==========================================
+// 1. WHILE — CONTAGEM DE PRODUTOS
+// ==========================================
+
+let contador = 1;
+let produtos = [
+    "Gel de limpeza",
+    "Sérum hidratante",
+    "Creme facial"
 ];
 
-// FOR: repete a criação dos cartões de produtos
-const lista = document.getElementById("listaProdutos");
+let textoWhile = "";
 
-for (let i = 0; i < produtos.length; i++) {
-    lista.innerHTML += `
-        <div class="produto">
-            <div class="emoji">${produtos[i].emoji}</div>
-            <h3>${produtos[i].nome}</h3>
-            <p>${produtos[i].descricao}</p>
-            <strong>${produtos[i].preco}</strong>
-        </div>
-    `;
+while (contador <= produtos.length) {
+    textoWhile += contador + ". " +
+        produtos[contador - 1] + "\n";
+
+    contador++;
 }
 
-// SWITCH: escolhe uma rotina de acordo com o tipo de pele
-function mostrarRotina() {
-    const tipo = document.getElementById("tipoPele").value;
-    const resultado = document.getElementById("resultado");
+document.getElementById("resultadoWhile").textContent =
+    textoWhile;
 
-    let rotina = "";
+
+// ==========================================
+// 2. SWITCH — TIPOS DE PELE
+// ==========================================
+
+function executarSwitch() {
+    let tipo = document.getElementById("tipoPele").value;
+    let mensagem = "";
 
     switch (tipo) {
-        case "oleosa":
-            rotina = "Use um gel de limpeza suave, hidratante leve e protetor solar.";
+        case "seca":
+            mensagem = "Pele seca: prefira um hidratante mais "
+                + "cremoso e produtos suaves.";
             break;
 
-        case "seca":
-            rotina = "Prefira limpeza suave, hidratante mais nutritivo e protetor solar.";
+        case "oleosa":
+            mensagem = "Pele oleosa: procure hidratantes leves "
+                + "e produtos adequados ao seu tipo de pele.";
             break;
 
         case "mista":
-            rotina = "Use limpeza suave, hidratante equilibrado e protetor solar.";
+            mensagem = "Pele mista: busque equilíbrio entre "
+                + "hidratação e controle da oleosidade.";
             break;
 
         case "sensivel":
-            rotina = "Prefira produtos suaves, sem fragrância, e protetor solar adequado.";
+            mensagem = "Pele sensível: prefira produtos suaves, "
+                + "sem fragrância, e teste antes de usar.";
             break;
 
         default:
-            rotina = "Escolha um tipo de pele para ver sua rotina.";
+            mensagem = "Selecione um tipo de pele.";
     }
 
-    resultado.innerHTML = `
-        <h3>Sua rotina de skincare 💗</h3>
-        <p>${rotina}</p>
-    `;
+    document.getElementById("resultadoSwitch").textContent =
+        mensagem;
 }
 
-// WHILE: exibe os passos de uma rotina básica
-function mostrarPassos() {
-    const passos = [
-        "1. Limpar a pele",
-        "2. Hidratar a pele",
-        "3. Aplicar protetor solar pela manhã"
+
+// ==========================================
+// 3. DO-WHILE — ROTINA DE SKINCARE
+// ==========================================
+
+function executarDoWhile() {
+    let etapa = 0;
+
+    let rotina = [
+        "Limpar o rosto",
+        "Aplicar hidratante",
+        "Usar protetor solar pela manhã"
     ];
 
-    let i = 0;
-    let texto = "";
+    let resultado = "";
 
-    while (i < passos.length) {
-        texto += `<p>${passos[i]}</p>`;
-        i++;
-    }
+    do {
+        resultado += (etapa + 1) + ". "
+            + rotina[etapa] + "\n";
 
-    return texto;
+        etapa++;
+    } while (etapa < rotina.length);
+
+    document.getElementById("resultadoDoWhile").textContent =
+        resultado;
 }
 
-// Exibe os passos abaixo do seletor de tipo de pele
-document.getElementById("resultado").innerHTML = `
-    <h3>Passos básicos 💕</h3>
-    ${mostrarPassos()}
-`;
+
+// ==========================================
+// 4. FOR — ETAPAS DE CUIDADOS
+// ==========================================
+
+function executarFor() {
+    let etapas = [
+        "Limpeza facial",
+        "Hidratação",
+        "Protetor solar durante o dia"
+    ];
+
+    let resultado = "";
+
+    for (let i = 0; i < etapas.length; i++) {
+        resultado += (i + 1) + ". " + etapas[i] + "\n";
+    }
+
+    document.getElementById("resultadoFor").textContent =
+        resultado;
+}

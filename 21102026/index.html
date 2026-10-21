@@ -4,60 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Skin - Skincare</title>
-    <link rel="stylesheet" href="REPETIÇÕES.CSS">
+    <title>Glow Skin | Skincare</title>
+    <link rel="stylesheet" href="REPETIÇÕES.css">
 </head>
 <body>
 
     <header>
-        <h1>Glow Skin ✨</h1>
-        <p>Cuide da sua pele, realce sua beleza!</p>
-
+        <h1>✿ Glow Skin</h1>
         <nav>
             <a href="#inicio">Início</a>
             <a href="#produtos">Produtos</a>
-            <a href="#rotina">Minha rotina</a>
+            <a href="#programacao">Programação</a>
         </nav>
     </header>
 
     <main>
-        <section id="inicio" class="banner">
-            <h2>Sua pele merece esse cuidado!</h2>
-            <p>Descubra uma rotina simples para cuidar da sua pele todos os dias.</p>
-            <a class="botao" href="#produtos">Conheça os produtos</a>
-        </section>
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <p class="subtitulo">SEU MOMENTO DE AUTOCUIDADO</p>
+                <h2>Cuide da sua pele.<br>Realce sua beleza.</h2>
+                <p>
+                    Descubra uma rotina de skincare feita para
+                    deixar sua pele hidratada, saudável e radiante.
+                </p>
+                <a href="#produtos" class="botao">Conheça os produtos</a>
+            </div>
 
-        <section id="produtos">
-            <h2>Nossos produtos</h2>
-
-            <div class="produtos" id="listaProdutos">
-                <!-- Os produtos serão criados pelo JavaScript -->
+            <div class="hero-image">
+                <div class="flor">✿</div>
+                <span>Seu brilho natural começa aqui</span>
             </div>
         </section>
 
-        <section id="rotina">
-            <h2>Descubra sua rotina de skincare</h2>
-            <p>Escolha o seu tipo de pele:</p>
+        <section id="produtos" class="produtos">
+            <p class="subtitulo">ROTINA DE BELEZA</p>
+            <h2>Nossos queridinhos ♡</h2>
 
-            <select id="tipoPele">
-                <option value="oleosa">Pele oleosa</option>
-                <option value="seca">Pele seca</option>
-                <option value="mista">Pele mista</option>
-                <option value="sensivel">Pele sensível</option>
-            </select>
+            <div class="cards">
+                <article class="card">
+                    <div class="produto-icon">🫧</div>
+                    <h3>Gel de Limpeza</h3>
+                    <p>Limpeza suave para remover impurezas.</p>
+                    <span>R$ 39,90</span>
+                </article>
 
-            <button onclick="mostrarRotina()">
-                Descobrir rotina
-            </button>
+                <article class="card">
+                    <div class="produto-icon">💧</div>
+                    <h3>Sérum Hidratante</h3>
+                    <p>Hidratação para uma pele macia e luminosa.</p>
+                    <span>R$ 59,90</span>
+                </article>
 
-            <div id="resultado"></div>
+                <article class="card">
+                    <div class="produto-icon">🌸</div>
+                    <h3>Creme Facial</h3>
+                    <p>Nutrição e cuidado para o dia a dia.</p>
+                    <span>R$ 49,90</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="programacao" class="programacao">
+            <p class="subtitulo">ATIVIDADE DE JAVASCRIPT</p>
+            <h2>Aprendendo programação ✨</h2>
+            <p class="descricao">
+                Veja os comandos WHILE, SWITCH, DO-WHILE e FOR
+                funcionando diretamente nesta página.
+            </p>
+
+            <div class="resultado">
+                <h3>1. WHILE — Contagem de produtos</h3>
+                <p>O WHILE repete uma instrução enquanto a condição for verdadeira.</p>
+                <div id="resultadoWhile" class="saida"></div>
+            </div>
+
+            <div class="resultado">
+                <h3>2. SWITCH — Tipos de pele</h3>
+                <p>Escolha um tipo de pele para receber uma sugestão de cuidado.</p>
+
+                <select id="tipoPele">
+                    <option value="seca">Pele seca</option>
+                    <option value="oleosa">Pele oleosa</option>
+                    <option value="mista">Pele mista</option>
+                    <option value="sensivel">Pele sensível</option>
+                </select>
+
+                <button onclick="executarSwitch()">Ver sugestão</button>
+                <div id="resultadoSwitch" class="saida"></div>
+            </div>
+
+            <div class="resultado">
+                <h3>3. DO-WHILE — Rotina de skincare</h3>
+                <p>O DO-WHILE executa o bloco pelo menos uma vez antes de verificar a condição.</p>
+                <button onclick="executarDoWhile()">Mostrar rotina</button>
+                <div id="resultadoDoWhile" class="saida"></div>
+            </div>
+
+            <div class="resultado">
+                <h3>4. FOR — Etapas de cuidados</h3>
+                <p>O FOR percorre as etapas da rotina de skincare.</p>
+                <button onclick="executarFor()">Ver etapas</button>
+                <div id="resultadoFor" class="saida"></div>
+            </div>
+        </section>
+
+        <section class="equipe">
+            <p class="subtitulo">QUEM FEZ ESTE PROJETO</p>
+            <h2>Desenvolvido com carinho ♡</h2>
+            <p><strong>Dupla:</strong></p>
+            <p>Isadora de Souza Melo</p>
+            <p>Samilly Fontes Rocha</p>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Glow Skin | Seu momento de autocuidado 💕</p>
+        <p>✿ Glow Skin — Beleza, cuidado e tecnologia.</p>
+        <p>Projeto escolar de HTML, CSS e JavaScript.</p>
     </footer>
 
-    <script src="REPETIÇÕES.JS"></script>
+    <script src="REPETIÇÃO.JS"></script>
 </body>
 </html>
