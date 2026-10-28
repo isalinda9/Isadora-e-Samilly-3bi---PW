@@ -1,0 +1,137 @@
+:root {
+    --navy-blue: #1b2a4a;
+    --baby-blue: #e0f2fe;
+    --baby-blue-dark: #93c5fd;
+    --lime-green: #84cc16;
+    --lime-green-hover: #65a30d;
+    --text-color: #334155;
+    --bg-color: #f8fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--baby-blue);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(27, 42, 74, 0.15);
+    border-top: 6px solid var(--navy-blue);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: var(--navy-blue);
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: 2px solid var(--baby-blue-dark);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: var(--bg-color);
+}
+
+legend {
+    background-color: var(--navy-blue);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group.span-2 {
+    flex: 2;
+}
+
+label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--navy-blue);
+    margin-bottom: 6px;
+}
+
+input, select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--lime-green);
+    box-shadow: 0 0 0 3px rgba(132, 204, 22, 0.2);
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: var(--lime-green);
+    color: var(--navy-blue);
+    font-weight: bold;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(132, 204, 22, 0.3);
+}
+
+.btn-enviar:hover {
+    background-color: var(--lime-green-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+}
