@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokémon Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="estrelas"></div>
+
+    <main class="container">
+
+        <!-- CABEÇALHO -->
+
+        <header class="header">
+
+            <div class="logo">
+                <span class="pokebola">◉</span>
+                <span>POKÉMON WORLD</span>
+            </div>
+
+            <span class="categoria">✦ EXPLORE O UNIVERSO POKÉMON ✦</span>
+
+            <h1>Pokémon Explorer</h1>
+
+            <p>
+                Descubra criaturas incríveis, conheça seus poderes
+                e encontre seu próximo Pokémon favorito!
+            </p>
+
+            <div class="decoracao">
+                ✨ 🌟 ⚡ 🌙 ✨
+            </div>
+
+        </header>
+
+        <!-- PESQUISA -->
+
+        <section class="pesquisa">
+
+            <input
+                type="text"
+                id="pokemonInput"
+                placeholder="Digite o nome ou número do Pokémon..."
+                autocomplete="off"
+            >
+
+            <button id="buscarBtn">
+                🔎 Buscar
+            </button>
+
+        </section>
+
+        <button class="aleatorio" id="aleatorioBtn">
+            🎲 Descobrir Pokémon aleatório
+        </button>
+
+        <!-- CARTÃO PRINCIPAL -->
+
+        <section class="card" id="pokemonCard">
+
+            <div class="card-topo">
+
+                <div>
+                    <span class="subtitulo">SEU NOVO DESCOBRIMENTO</span>
+
+                    <h2 id="pokemonNome">Carregando...</h2>
+
+                    <span class="numero" id="pokemonNumero">
+                        #000
+                    </span>
+                </div>
+
+                <div class="raridade">⭐ POKÉDEX</div>
+
+            </div>
+
+            <!-- IMAGEM -->
+
+            <div class="imagem-area">
+
+                <div class="circulo"></div>
+
+                <span class="brilho brilho1">✦</span>
+                <span class="brilho brilho2">✧</span>
+                <span class="brilho brilho3">✦</span>
+
+                <img
+                    id="pokemonImagem"
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+                    alt="Pokémon"
+                >
+
+            </div>
+
+            <!-- TIPOS -->
+
+            <div class="tipos" id="pokemonTipos">
+                <span class="tipo">Carregando...</span>
+            </div>
+
+            <!-- INFORMAÇÕES -->
+
+            <div class="informacoes">
+
+                <div class="info-box">
+                    <span>📏 Altura</span>
+                    <strong id="pokemonAltura">--</strong>
+                </div>
+
+                <div class="info-box">
+                    <span>⚖️ Peso</span>
+                    <strong id="pokemonPeso">--</strong>
+                </div>
+
+                <div class="info-box">
+                    <span>💎 Experiência</span>
+                    <strong id="pokemonXP">--</strong>
+                </div>
+
+            </div>
+
+            <!-- HABILIDADES -->
+
+            <div class="habilidades-area">
+
+                <h3>✨ Habilidades especiais</h3>
+
+                <div id="pokemonHabilidades" class="habilidades">
+                    Carregando...
+                </div>
+
+            </div>
+
+            <!-- ATRIBUTOS -->
+
+            <div class="status-area">
+
+                <h3>⚡ Poderes e atributos</h3>
+
+                <div id="pokemonStatus">
+
+                    <div class="status-item">
+                        <div class="status-info">
+                            <span>HP</span>
+                            <strong>--</strong>
+                        </div>
+                        <div class="barra">
+                            <div class="preenchimento"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- RODAPÉ -->
+
+        <footer>
+
+            <div class="footer-icon">🔴⚪</div>
+
+            <p>Pokémon Explorer © 2026</p>
+
+            <span>Desenvolvido com a PokéAPI 💜</span>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
